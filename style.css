@@ -1,0 +1,128 @@
+/* Common */
+nav ul {
+    display: flex; /* Make the menu flexible */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.features-container {
+    display: flex; /* Make the container a flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+/* Header */
+.header_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .title_section {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+.title_section {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-size);
+}
+
+/* Main */
+main section div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 var(--space-size);
+}
+
+.column {
+    flex-grow: 1;
+    margin: var(--space-size);
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: var(--space-size);
+}
+
+section:first-of-type div:first-of-type .column:first-of-type {
+    flex-shrink: 2;
+    flex-grow: 2;
+    flex-basis: 22px;
+    height: 420px;
+    background: url('./images/cn-client-bg.jpeg') rgba(29, 14, 21, 0.3);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: var(--space-size);
+    color: white;
+}
+
+.card{
+    flex: 1;
+    
+}
+
+.card-first {
+    order: 1;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+
+.card-second {
+    order: 2;
+    /* 
+    flex-grow: ; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+
+.card-third {
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 18%;
+
+}
+
+.card-fouth {
+    order: 4;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+
+.card-fifth {
+    order: 5;
+    flex: 1 ;
+    flex-grow: 4;
+    flex-shrink: 4;
+    flex-basis: auto    ;
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.card-six {
+    order: 6;
+    flex: 1;
+    flex-grow: 4;
+    flex-shrink: 4;
+    background: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    margin: var(--space-size) calc(var(--space-size) * 2);
+    display: flex; /* Make footer flexible */
+    justify-content: space-between; /* Adjust alignment */
+    align-items: flex-end   ;
+    flex: 1;
+    padding: 10px;
+}
+
